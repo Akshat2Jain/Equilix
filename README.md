@@ -8,7 +8,6 @@ Congratulations on creating your Equilix extension for Visual Studio Code! This 
 
 ## Features
 
-- Automatic conversion of `var` to `let` or `const` for variable declarations.
 - Conversion of equality (`==`) and inequality (`!=`) operators to strict equality (`===`) and strict inequality (`!==`).
 - Real-time feedback with an on-save popup notification indicating the successful conversion.
 
