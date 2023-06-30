@@ -2,42 +2,43 @@
   <img src="equilix-logo.png" alt="Extension Logo" width="400" />
 </p>
 
-# Equilix - VS Code Extension
+# 🌟 Equilix - VS Code Extension
 
 Equilix extension for Visual Studio Code! This extension enhances the editing experience by automatically equality/inequality operators from `==` to `===` and `!=` to `!==` on save.
 
-## Features
+
+## ✨ Features
 
 - Conversion of equality (`==`) and inequality (`!=`) operators to strict equality (`===`) and strict inequality (`!==`).
 - Real-time feedback with an on-save popup notification indicating the successful conversion.
 
-## Requirements
+## 📋 Requirements
 
 - Visual Studio Code version 1.56.0 or above.
 
-## Installation
+## 🚀 Installation
 
 1. Launch Visual Studio Code.
 2. Go to the Extensions view (Ctrl+Shift+X).
 3. Search for "Equilix" and click Install.
 4. Reload Visual Studio Code to activate the extension.
 
-## Usage
+## 🎯 Usage
 
 1. Open a JavaScript file (.js) in Visual Studio Code.
-2. As you save the file, Equilix will automatically convert `var` to `let` or `const`, and `==` to `===` and `!=` to `!==`.
-3. If any conversions are made, a success notification popup will be displayed.
+2. As you save the file, Equilix will automatically convert and `==` to `===` and `!=` to `!==`.
+3. If any conversions are made, a success notification popup will be displayed will the line number where that conversion happened
 
-## Configuration
+## ⚙️ Configuration
 
 Equilix does not require any additional configuration. It works out of the box with the default settings.
 
-## Feedback and Contributions
+## 💌 Feedback and Contributions
 
 - If you encounter any issues or have suggestions, please [open an issue](https://github.com/your-username/your-extension-repo/issues).
 - Contributions are welcome! Feel free to [fork the repository](https://github.com/your-username/your-extension-repo/fork) and submit a pull request.
 
-## License
+## 📄 License
 
 This extension is licensed under the [MIT License](LICENSE).
 
