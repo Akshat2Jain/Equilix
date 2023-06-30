@@ -4,7 +4,7 @@
 
 # Equilix - VS Code Extension
 
-Congratulations on creating your Equilix extension for Visual Studio Code! This extension enhances the editing experience by automatically converting variables from `var` to `let` or `const`, and equality/inequality operators from `==` to `===` and `!=` to `!==` on save.
+Congratulations on creating your Equilix extension for Visual Studio Code! This extension enhances the editing experience by automatically equality/inequality operators from `==` to `===` and `!=` to `!==` on save.
 
 ## Features
 
