@@ -4,6 +4,7 @@
   "publisher": "AkshatJain",
   "description": "",
   "version": "0.0.1",
+  "icon": "images/equilix-logo.png",
   "engines": {
     "vscode": "^1.79.0"
   },
@@ -14,7 +15,7 @@
   "main": "./extension.js",
   "contributes": {
     "commands": [{
-      "command": "equilix.helloWorld",
+      "command": "equilix",
       "title": "equilix"
     }]
   },
