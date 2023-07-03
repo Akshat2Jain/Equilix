@@ -3,8 +3,12 @@
   "displayName": "Equilix",
   "publisher": "AkshatJain",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "icon": "images/equilix-logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Akshat2Jain/Equilix.git"
+  },
   "engines": {
     "vscode": "^1.79.0"
   },
@@ -14,10 +18,12 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "equilix",
-      "title": "equilix"
-    }]
+    "commands": [
+      {
+        "command": "equilix",
+        "title": "equilix"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
