@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="equilix-logo.png" alt="Extension Logo" width="400" />
-</p>
-
 # 🌟 Equilix - VS Code Extension
 
 Equilix extension for Visual Studio Code! This extension enhances the editing experience by automatically equality/inequality operators from `==` to `===` and `!=` to `!==` on save.
@@ -11,6 +7,11 @@ Equilix extension for Visual Studio Code! This extension enhances the editing ex
 
 - Conversion of equality (`==`) and inequality (`!=`) operators to strict equality (`===`) and strict inequality (`!==`).
 - Real-time feedback with an on-save popup notification indicating the successful conversion.
+
+## Eliminates Manual ESLint Setup: 
+
+- With Equilix, there's no need to manually run ESLint with the --fix flag modify   package.json scripts. Equilix seamlessly integrates into Visual Studio Code and automatically applies the necessary code transformations on save. This eliminates the extra steps of running ESLint separately and simplifies the development workflow.
+By using Equilix, you can avoid the hassle of configuring and running ESLint with --fix, setting up scripts in package.json, and ensuring consistent execution across different environments. Equilix provides a more straightforward and streamlined approach to code transformations, making the process quicker and more convenient.
 
 ## 📋 Requirements
 
@@ -35,8 +36,8 @@ Equilix does not require any additional configuration. It works out of the box w
 
 ## 💌 Feedback and Contributions
 
-- If you encounter any issues or have suggestions, please [open an issue](https://github.com/your-username/your-extension-repo/issues).
-- Contributions are welcome! Feel free to [fork the repository](https://github.com/your-username/your-extension-repo/fork) and submit a pull request.
+- If you encounter any issues or have suggestions, please [open an issue](https://github.com/Akshat2Jain/Equilix/issues).
+- Contributions are welcome! Feel free to fork the repository and submit a pull request.
 
 ## 📄 License
 
@@ -44,6 +45,6 @@ This extension is licensed under the [MIT License](LICENSE).
 
 ---
 
-Thank you for using Equilix! If you find it helpful, don't forget to leave a ⭐️ on the [GitHub repository](https://github.com/your-username/your-extension-repo). If you have any questions or need further assistance, please don't hesitate to reach out.
+Thank you for using Equilix! If you find it helpful, don't forget to leave a ⭐️ on the [GitHub repository](https://github.com/Akshat2Jain/Equilix). If you have any questions or need further assistance, please don't hesitate to reach out.
 
 Happy coding! ✨🚀
