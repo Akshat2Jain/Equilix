@@ -3,7 +3,7 @@
   "displayName": "Equilix",
   "publisher": "AkshatJain",
   "description": "",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "icon": "images/equilix-logo.png",
   "repository": {
     "type": "git",
@@ -20,8 +20,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "equilix",
-        "title": "equilix"
+        "command": "equilix.convertCode",
+        "title": "Equilix: Convert Code"
       }
     ]
   },

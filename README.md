@@ -6,17 +6,19 @@
 
 Equilix extension for Visual Studio Code! This extension enhances the editing experience by automatically equality/inequality operators from `==` to `===` and `!=` to `!==` on save.
 
-
 ## ✨ Features
 
 - Conversion of equality (`==`) and inequality (`!=`) operators to strict equality (`===`) and strict inequality (`!==`).
 - Real-time feedback with an on-save popup notification indicating the successful conversion.
 
-## Eliminates Manual ESLint Setup: 
+## Eliminates Manual ESLint Setup:
 
-- With Equilix, there's no need to manually run ESLint with the --fix flag modify   package.json scripts. Equilix seamlessly integrates into Visual Studio Code and automatically applies the necessary code transformations on save. This eliminates the extra steps of running ESLint separately and simplifies the development workflow.
-By using Equilix, you can avoid the hassle of configuring and running ESLint with --fix, setting up scripts in package.json, and ensuring consistent execution across different environments. Equilix provides a more straightforward and streamlined approach to code transformations, making the process quicker and more convenient.
+- With Equilix, there's no need to manually run ESLint with the --fix flag modify package.json scripts. Equilix seamlessly integrates into Visual Studio Code and automatically applies the necessary code transformations on save. This eliminates the extra steps of running ESLint separately and simplifies the development workflow.
+  By using Equilix, you can avoid the hassle of configuring and running ESLint with --fix, setting up scripts in package.json, and ensuring consistent execution across different environments. Equilix provides a more straightforward and streamlined approach to code transformations, making the process quicker and more convenient.
 
+❗️ Note
+
+While Equilix offers a simplified alternative for specific code transformations, it's important to recognize that ESLint remains a robust tool for code linting, offering extensive rule sets, customizability, and integration with various development environments. Depending on your project's complexity and specific requirements, ESLint might be the preferred choice to enforce a wider range of coding standards.
 
 ## 📋 Requirements
 
@@ -72,7 +74,6 @@ Navigate to the cloned repository directory and set up the development environme
 
 `npm install`
 
-
 This command will install all the necessary dependencies and tools required for development.
 
 ### Make the necessary changes and enhancements
@@ -88,6 +89,5 @@ To debug your changes, use the `F5` key in your code editor. This will compile a
 Once you're satisfied with your changes, it's time to share them with us. Commit your changes locally, push them to your forked repository on GitHub, and then create a Pull Request (PR) from your forked repository to the main Equilix repository. Make sure to provide a clear and descriptive title for your PR and explain the changes you've made. We will review your contribution and provide feedback if necessary.
 
 That's it! By following these steps, you'll be able to contribute to Equilix and make a positive impact on the project. We greatly appreciate your support and look forward to reviewing your contributions. Happy coding!
-
 
 Happy coding! ✨🚀
