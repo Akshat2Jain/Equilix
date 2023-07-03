@@ -41,8 +41,8 @@ Equilix does not require any additional configuration. It works out of the box w
 
 ## 💌 Feedback and Contributions
 
-- If you encounter any issues or have suggestions, please [open an issue](https://github.com/your-username/your-extension-repo/issues).
-- Contributions are welcome! Feel free to [fork the repository](https://github.com/your-username/your-extension-repo/fork) and submit a pull request.
+- If you encounter any issues or have suggestions, please [open an issue](https://github.com/Akshat2Jain/Equilix/issues).
+- Contributions are welcome! Feel free to and submit a pull request.
 
 ## 📄 License
 
@@ -50,7 +50,7 @@ This extension is licensed under the [MIT License](LICENSE).
 
 ---
 
-Thank you for using Equilix! If you find it helpful, don't forget to leave a ⭐️ on the [GitHub repository](https://github.com/your-username/your-extension-repo). If you have any questions or need further assistance, please don't hesitate to reach out.
+Thank you for using Equilix! If you find it helpful, don't forget to leave a ⭐️ on the [GitHub repository](https://github.com/Akshat2Jain/Equilix). If you have any questions or need further assistance, please don't hesitate to reach out.
 
 # 🛠️ Contributing
 
