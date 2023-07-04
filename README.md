@@ -37,6 +37,13 @@ While Equilix offers a simplified alternative for specific code transformations,
 2. As you save the file, Equilix will automatically convert and `==` to `===` and `!=` to `!==`.
 3. If any conversions are made, a success notification popup will be displayed will the line number where that conversion happened
 
+## Ussage(if above method does not work)
+
+1. Open a JavaScript file (.js) in Visual Studio Code.
+2. If On save it does not automarically convert them open command pallete `(cntrl+shift+p)` and type equilix
+3. Press `enter` and you will see a error stating that `wrong command` press `ok`
+4. Now again on save , your extension should be enable
+
 ## ⚙️ Configuration
 
 Equilix does not require any additional configuration. It works out of the box with the default settings.
