@@ -23,8 +23,8 @@ function activate(context) {
 }
 
 function convertEquals(text) {
-	const convertedText = text.replace(/\b(==)\b/g, '===');
-    return convertedText.replace(/\b(!=)\b/g, '!==');
+	const convertedText = text.replace(/ == /g, " === ");
+  	return convertedText.replace(/ != /g, " !== ");
 }
 function getConvertedLineNumbers(originalText, convertedText) {
     const originalLines = originalText.split('\n');
