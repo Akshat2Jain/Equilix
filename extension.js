@@ -1,7 +1,7 @@
 const vscode = require("vscode");
 
 function activate(context) {
-  console.log('Congratulations, your extension "equilix" is now active!');
+  vscode.window.showInformationMessage("Equilix is now active!");
 
   const disposable = vscode.workspace.onWillSaveTextDocument((event) => {
     const document = event.document;
