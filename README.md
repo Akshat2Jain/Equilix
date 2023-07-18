@@ -20,6 +20,16 @@ Equilix extension for Visual Studio Code! This extension enhances the editing ex
 
 While Equilix offers a simplified alternative for specific code transformations, it's important to recognize that ESLint remains a robust tool for code linting, offering extensive rule sets, customizability, and integration with various development environments. Depending on your project's complexity and specific requirements, ESLint might be the preferred choice to enforce a wider range of coding standards.
 
+## ⚙️ Tech Stack
+
+Equilix is built using the following technologies:
+
+JavaScript and TypeScript: The core functionality and extension API are implemented using JavaScript and TypeScript, providing a robust and efficient codebase.
+
+Visual Studio Code Extension API: Equilix leverages the powerful Visual Studio Code Extension API to integrate seamlessly into the editor, allowing automatic code transformations on save.
+
+Regular Expressions: The conversion logic relies on regular expressions to identify and replace var, ==, and != occurrences, ensuring accurate and efficient transformations.
+
 ## 📋 Requirements
 
 - Visual Studio Code version 1.56.0 or above.
