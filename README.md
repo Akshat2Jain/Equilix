@@ -140,7 +140,8 @@ function compareValues(a, b) {
 
 After:
 
-```function compareValues(a, b) {
+```
+function compareValues(a, b) {
   return a === b;
 }
 ```
@@ -149,7 +150,8 @@ After:
 
 Before:
 
-```function calculateArea(radius) {
+```
+function calculateArea(radius) {
   var pi = 3.14159;
   var area = pi * radius * radius;
   return area;
@@ -158,7 +160,8 @@ Before:
 
 After:
 
-```function calculateArea(radius) {
+```
+function calculateArea(radius) {
   const pi = 3.14159;
   const area = pi * radius * radius;
   return area;
@@ -169,7 +172,8 @@ After:
 
 Before:
 
-```const numbers = [1, 2, 3, 4, 5];
+```
+const numbers = [1, 2, 3, 4, 5];
 const doubledNumbers = [];
 
 for (let i = 0; i < numbers.length; i++) {
@@ -179,7 +183,8 @@ for (let i = 0; i < numbers.length; i++) {
 
 After:
 
-```const numbers = [1, 2, 3, 4, 5];
+```
+const numbers = [1, 2, 3, 4, 5];
 const doubledNumbers = [];
 
 numbers.forEach((number) => {
@@ -191,7 +196,8 @@ numbers.forEach((number) => {
 
 Before:
 
-```function calculateSum(a, b) {
+```
+function calculateSum(a, b) {
   const result = a + b;
   const temp = a * b; // Unused variable
   return result;
