@@ -8,7 +8,26 @@ Equilix extension for Visual Studio Code! This extension enhances the editing ex
 
 ## ✨ Features
 
-- Conversion of equality (`==`) and inequality (`!=`) operators to strict equality (`===`) and strict inequality (`!==`).
+Equilix extension provides the following features:
+
+### Convert `var` to `const`
+
+- Automatically converts `var` variable declarations to `const` where applicable, promoting the use of immutable variables and preventing unintentional reassignments.
+
+### Convert `==` to `===` and `!=` to `!==`
+
+- Automatically converts loose equality (`==` and `!=`) to strict equality (`===` and `!==`) to avoid type coercion issues and ensure more predictable comparison behavior.
+
+### Transform `for` Loops to `forEach` or `map`
+
+- Identifies various `for` loop formats and offers the option to convert them to more concise and expressive `forEach` or `map` methods, making your code cleaner and easier to read.
+
+### Detect Unused Variables
+
+- Equilix analyzes your code and detects unused variables within a single file's scope. It can then highlight or remove those unused variables, helping you maintain a more organized and optimized codebase.
+
+### Feedback
+
 - Real-time feedback with an on-save popup notification indicating the successful conversion.
 
 ## Eliminates Manual ESLint Setup:
@@ -22,7 +41,7 @@ While Equilix offers a simplified alternative for specific code transformations,
 
 ## ⚙️ Tech Stack
 
-- Equilix is built using the following technologies:
+Equilix is built using the following technologies:
 
 - JavaScript and TypeScript: The core functionality and extension API are implemented using JavaScript and TypeScript, providing a robust and efficient codebase.
 
