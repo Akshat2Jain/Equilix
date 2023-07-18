@@ -4,7 +4,7 @@
 
 # 🌟 Equilix - VS Code Extension
 
-Equilix extension for Visual Studio Code! This extension enhances the editing experience by automatically equality/inequality operators from `==` to `===` and `!=` to `!==` on save.
+Your JavaScript Code Fixer Extension.
 
 ## ✨ Features
 
@@ -127,3 +127,81 @@ Once you're satisfied with your changes, it's time to share them with us. Commit
 That's it! By following these steps, you'll be able to contribute to Equilix and make a positive impact on the project. We greatly appreciate your support and look forward to reviewing your contributions. Happy coding!
 
 Happy coding! ✨🚀
+
+### Example 1: Convert Equality and Inequality
+
+Before:
+
+```javascript
+function compareValues(a, b) {
+  return a == b;
+}
+```
+
+After:
+
+```function compareValues(a, b) {
+  return a === b;
+}
+```
+
+### Example 2: Convert var to const
+
+Before:
+
+```function calculateArea(radius) {
+  var pi = 3.14159;
+  var area = pi * radius * radius;
+  return area;
+}
+```
+
+After:
+
+```function calculateArea(radius) {
+  const pi = 3.14159;
+  const area = pi * radius * radius;
+  return area;
+}
+```
+
+### Example 3: Convert For Loop to forEach
+
+Before:
+
+```const numbers = [1, 2, 3, 4, 5];
+const doubledNumbers = [];
+
+for (let i = 0; i < numbers.length; i++) {
+  doubledNumbers.push(numbers[i] * 2);
+}
+```
+
+After:
+
+```const numbers = [1, 2, 3, 4, 5];
+const doubledNumbers = [];
+
+numbers.forEach((number) => {
+  doubledNumbers.push(number * 2);
+})
+```
+
+### Example 4: Detect Unused Variable
+
+Before:
+
+```function calculateSum(a, b) {
+  const result = a + b;
+  const temp = a * b; // Unused variable
+  return result;
+}
+```
+
+After:
+
+```Detected 1 unused variable: temp.
+
+```
+
+## Let's write cleaner and safer JavaScript together with Equilix! 🎉🚀
