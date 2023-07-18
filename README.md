@@ -200,8 +200,6 @@ Before:
 
 After:
 
-```Detected 1 unused variable: temp.
-
-```
+`Detected 1 unused variable: temp.`
 
 ## Let's write cleaner and safer JavaScript together with Equilix! 🎉🚀
