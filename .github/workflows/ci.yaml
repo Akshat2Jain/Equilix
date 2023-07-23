@@ -30,7 +30,7 @@ jobs:
 
       # Add the thank you message step here
       - name: Send Thank You Message
-        uses: dawidd6/action-send-message@v1
+        uses: softprops/action-gh-release@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           message: "Thank you for contributing to our project! Your efforts are appreciated. 🎉"
