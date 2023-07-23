@@ -69,9 +69,15 @@ function convertForLoops(text) {
   return convertedText;
 }
 
+function convertVarToConst(text) {
+  // Convert 'var' to 'const'
+  const convertedText = text.replace(/\bvar\b/g, "const");
+  return convertedText;
+}
+
 function convertEquals(text) {
   // Convert 'var' to 'const'
-  const constConvertedText = text.replace(/\bvar\b/g, "const");
+  const constConvertedText = convertVarToConst(text);
 
   const forLoopsConvertedText = convertForLoops(constConvertedText);
 
@@ -97,6 +103,8 @@ function getConvertedLineNumbers(originalText, convertedText) {
 function deactivate() {}
 
 module.exports = {
+  convertEquals,
+  convertVarToConst,
   activate,
   deactivate,
 };

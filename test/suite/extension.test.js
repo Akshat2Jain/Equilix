@@ -1,15 +1,25 @@
-const assert = require('assert');
+const assert = require("assert");
+const { convertEquals, convertVarToConst } = require("../../extension");
+const vscode = require("vscode");
 
-// You can import and use all API from the 'vscode' module
-// as well as import your extension to test it
-const vscode = require('vscode');
-// const myExtension = require('../extension');
+suite("Equilix Extension Tests", () => {
+  test("Convert equals (==) to strict equals (===)", () => {
+    const originalCode =
+      "const a = 5;\nconst b = '5';\nif (a == b) {\n  console.log('Equal');\n}";
+    const expectedCode =
+      "const a = 5;\nconst b = '5';\nif (a === b) {\n  console.log('Equal');\n}";
 
-suite('Extension Test Suite', () => {
-	vscode.window.showInformationMessage('Start all tests.');
+    const convertedCode = convertEquals(originalCode);
+    assert.equal(convertedCode, expectedCode);
+  });
 
-	test('Sample test', () => {
-		assert.strictEqual(-1, [1, 2, 3].indexOf(5));
-		assert.strictEqual(-1, [1, 2, 3].indexOf(0));
-	});
+  test("Convert var to const", () => {
+    const originalCode =
+      "function calculateArea(radius) {\n  var pi = 3.14159;\n  var area = pi * radius * radius;\n  return area;\n}";
+    const expectedCode =
+      "function calculateArea(radius) {\n  const pi = 3.14159;\n  const area = pi * radius * radius;\n  return area;\n}";
+
+    const convertedCode = convertVarToConst(originalCode);
+    assert.equal(convertedCode, expectedCode);
+  });
 });
