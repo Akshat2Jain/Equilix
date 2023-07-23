@@ -12,6 +12,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    # Set the GH_TOKEN environment variable at the job level
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -26,10 +30,6 @@ jobs:
 
       - name: Run tests
         run: npm test
-      
-      # Set the GH_TOKEN environment variable
-      env:
-        GH_TOKEN: ${{ github.token }}
 
       # Add the thank you message step here
       - name: Send Thank You Message
