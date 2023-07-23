@@ -34,4 +34,4 @@ jobs:
       # Add the thank you message step here
       - name: Send Thank You Message
         run: |
-          gh issue comment add ${{ github.event.issue.number }} --body "Thank you for contributing to our project! Your efforts are appreciated. 🎉"
+          gh issue comment ${{ github.event.issue.number }} --body "Thank you for contributing to our project! Your efforts are appreciated. 🎉"
