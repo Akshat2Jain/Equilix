@@ -85,7 +85,7 @@ function convertEquals(text) {
   const convertedEquals = forLoopsConvertedText.replace(/ == /g, " === ");
   return convertedEquals.replace(/ != /g, " !== ");
 }
-
+// this function counts the number of lines
 function getConvertedLineNumbers(originalText, convertedText) {
   const originalLines = originalText.split("\n");
   const convertedLines = convertedText.split("\n");
