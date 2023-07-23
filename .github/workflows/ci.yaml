@@ -7,7 +7,6 @@ on:
   push:
     branches:
       - main
-      # Add other branch names as needed
 
 jobs:
   build:
@@ -30,7 +29,6 @@ jobs:
 
       # Add the thank you message step here
       - name: Send Thank You Message
-        uses: softprops/action-gh-release@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          message: "Thank you for contributing to our project! Your efforts are appreciated. 🎉"
+        run: |
+          echo "Thank you for contributing to our project! Your efforts are appreciated. 🎉" > message.txt
+          cat message.txt | curl -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -d @- "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/comments"
