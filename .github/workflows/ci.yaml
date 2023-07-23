@@ -26,13 +26,3 @@ jobs:
 
       - name: Run tests
         run: npm test
-
-      # Add the thank you message step here
-      - name: Send Thank You Message
-        run: |
-          issue_number=${{ github.event.number }}
-          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
-            issue_number=${{ github.event.pull_request.number }}
-          fi
-          echo "Thank you for contributing to our project! Your efforts are appreciated. 🎉" > comment.txt
-          gh issue comment $issue_number --body-file comment.txt
