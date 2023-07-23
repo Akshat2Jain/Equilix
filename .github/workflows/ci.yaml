@@ -12,10 +12,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    # Set the GH_TOKEN environment variable at the job level
-    env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -34,4 +30,8 @@ jobs:
       # Add the thank you message step here
       - name: Send Thank You Message
         run: |
-          gh issue comment ${{ github.event.issue.number }} --body "Thank you for contributing to our project! Your efforts are appreciated. 🎉"
+          issue_number=${{ github.event.number }}
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            issue_number=${{ github.event.pull_request.number }}
+          fi
+          gh issue comment $issue_number --body "Thank you for contributing to our project! Your efforts are appreciated. 🎉"
