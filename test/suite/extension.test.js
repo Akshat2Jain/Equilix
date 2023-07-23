@@ -2,6 +2,7 @@ const assert = require("assert");
 const { convertEquals, convertVarToConst } = require("../../extension");
 const vscode = require("vscode");
 // Currently two tests were made (2 test are more required for the forloop and undetected variable)
+// Should made a issue related to it
 suite("Equilix Extension Tests", () => {
   test("Convert equals (==) to strict equals (===)", () => {
     const originalCode =
