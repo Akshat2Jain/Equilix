@@ -26,6 +26,10 @@ jobs:
 
       - name: Run tests
         run: npm test
+      
+      # Set the GH_TOKEN environment variable
+      env:
+        GH_TOKEN: ${{ github.token }}
 
       # Add the thank you message step here
       - name: Send Thank You Message
