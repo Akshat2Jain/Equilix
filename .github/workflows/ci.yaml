@@ -24,24 +24,18 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # Install the required dependency
-      - name: Install Octokit REST library
-        run: npm install @octokit/rest
-
       - name: Run tests
         run: npm test
 
       # Add the thank you message step here
       - name: Send Thank You Message
-        uses: actions/github-script@v4
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const message = "Thank you for contributing to our project! Your efforts are appreciated. 🎉";
-            const octokit = require('@octokit/rest')();
-            octokit.issues.createComment({
-              owner: github.context.repo.owner,
-              repo: github.context.repo.repo,
-              issue_number: github.context.issue.number,
-              body: message
-            });
+        run: |
+          const message = "Thank you for contributing to our project! Your efforts are appreciated. 🎉";
+          const github = require('@actions/github');
+          const octokit = new github.GitHub(process.env.GITHUB_TOKEN);
+          octokit.issues.createComment({
+            owner: github.context.repo.owner,
+            repo: github.context.repo.repo,
+            issue_number: github.context.issue.number,
+            body: message
+          });
