@@ -32,4 +32,4 @@ jobs:
         run: |
           echo "Thank you for contributing to our project! Your efforts are appreciated. 🎉" | \
           curl -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-          -d @- "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/comments"
+          -d @- "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments"
