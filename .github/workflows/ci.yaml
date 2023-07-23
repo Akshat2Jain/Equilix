@@ -34,4 +34,5 @@ jobs:
           if [[ "${{ github.event_name }}" == "pull_request" ]]; then
             issue_number=${{ github.event.pull_request.number }}
           fi
-          gh issue comment $issue_number --body "Thank you for contributing to our project! Your efforts are appreciated. 🎉"
+          echo "Thank you for contributing to our project! Your efforts are appreciated. 🎉" | \
+          gh issue comment $issue_number --input -
