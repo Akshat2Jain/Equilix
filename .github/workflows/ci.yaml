@@ -34,11 +34,10 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const message = "Thank you for contributing to our project! Your efforts are appreciated. 🎉";
-            const { context, github } = require('@actions/github');
-            const { owner, repo, number } = context.issue;
-            github.issues.createComment({
-              owner: owner,
-              repo: repo,
-              issue_number: number,
+            const octokit = require('@octokit/rest')();
+            octokit.issues.createComment({
+              owner: github.context.repo.owner,
+              repo: github.context.repo.repo,
+              issue_number: github.context.issue.number,
               body: message
             });
